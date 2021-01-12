@@ -186,6 +186,7 @@ h1{
     font-weight: 600;
 }
 .project-link a{
+    margin-top: 50px;
     border: 1px solid #F53519;
     padding: 5px;
     font-weight: 500;
