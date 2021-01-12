@@ -52,7 +52,7 @@ ul{
     position: absolute;
     top:250px;
     animation: rotation 10s infinite linear;
-    animation-delay: 10s;
+    animation-delay: 4s;
     z-index: -1;
 }
 .animation li{

@@ -21,7 +21,7 @@ function setanim(){
    for ( i = 1; i <=40; i++) {
                 var rand = myArray1[(Math.random() * myArray1.length) | 0]
             document.getElementById(i).style.animation=rand+" 2s ease-in-out infinite";
-            rand=Math.random()*8+1;
+            rand=Math.random()*3+1;
             document.getElementById(i).style.animationDelay=rand+"s";
             
    }
