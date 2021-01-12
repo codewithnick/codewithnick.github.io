@@ -1,0 +1,231 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    color: white;
+    overflow-x: hidden;
+
+  } 
+body{
+    margin: 0px;
+    min-width: fit-content;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ a{
+    text-decoration: none;
+    color: inherit;
+}
+.vcenter{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.hcenter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.dp{
+    height: 600px;
+    width: 100%;
+}
+.dp img{
+    margin-top: -100px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+.animation ul{
+    position: absolute;
+    top:250px;
+    animation: rotation 10s infinite linear;
+    animation-delay: 10s;
+    z-index: -1;
+}
+.animation li{
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin:5px;
+}
+.hide{
+    display: none;
+}
+.section{
+    margin-top: 500px;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.6));
+    color: black;
+    text-align: center;
+}
+.link:hover{
+    color: #F53519;
+    font-size: 130%;
+    border-bottom: 1px solid #F53519;
+    padding: 0 0 2px;
+}
+.lavender_text{
+    color: #7678ED;
+    font-family: cursive;
+    font-weight: 500;
+}
+.orange_text{
+    color: #F53519;
+}
+#about_me ,#graph ,#projects , #contact-me{
+    width: 100%;
+    background-color: #F0F4EF;
+    border-top: 5px solid #7678ED;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin-top: 25px;
+    color: #746F72;
+    border-bottom: 1px solid #746F72;
+    font-size: 30px;
+    font-weight: 900;
+}
+#about_me p,#about_me blockquote{
+    width: 50%;
+    color: #746F72;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+#graph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.bar{
+    margin-bottom: 15px;
+    display: flex;
+    width: 60%;
+    background-color: #DBDBFA;
+}
+.progress::before{
+    width: 0px;
+}
+.progress{
+    background-color: #7678ED;
+    
+    animation-delay: 1s;
+}
+
+.lang{
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    width: 100px;
+    background-color: #4A4DE8;
+    color: #DBDBFA;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 25px;
+    padding:5px;
+}
+.percent{
+    font-size: 18px;
+    padding: 5px;
+    color: #746F72;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: #746F72;
+}
+.container div{
+    height: 250px;
+    width: 400px;
+}
+.project-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-link{
+    background-color: #F0F4EF;
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+    font-family: raleway;
+}
+.project-link:hover{
+    border-top: 0.1px solid #F53519;
+    border-bottom: 0.1px solid #F53519;
+    animation: forwards load 2s 1 ;
+}
+.project-link h4{
+    font-weight: 600;
+}
+.project-link a{
+    border: 1px solid #F53519;
+    padding: 5px;
+    font-weight: 500;
+}
+.project-link a:hover{
+    background-color: #F53519;
+    color: #DBDBFA;
+}
+#contact-me{
+    background-color: #33445C;
+}
+#contact-me h1{
+    color:#F0F4EF;
+    border-bottom: 1px solid #F0F4EF;
+}
+#contact-me form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#contact-me form input,#contact-me form textarea{
+    background-color: #1D2735;
+    border: none;
+    color: #F0F4EF;
+    height: 25px;
+    width: 250px;
+    resize: none;
+    outline: none;
+}
+
+#contact-me form button{
+    width: fit-content;
+    padding: 10px;
+    background-color: transparent;
+    color: #F0F4EF;
+    border: 1px solid #F0F4EF;
+    outline: none;
+}
+@media screen and (max-width: 800px) {
+    .animation ul li{
+        display: none;
+    }
+}

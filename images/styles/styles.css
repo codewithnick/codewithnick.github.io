@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    font-size: 36px;
+    overflow-y: scroll;
+}
+nav{
+    display: flex;
+    text-transform: uppercase;
+    background-color: skyblue;
+    align-items: right;
+    justify-content: right;
+    padding: 10px;
+    font-size: 18px;
+    
+}
+nav a{
+    padding-left: 15px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    
+}
+.greetings{
+    background-image: radial-gradient(circle,rgb(0,50, 220) ,skyblue );
+    text-align: center;
+    font-size: 145%;
+    color: orange;
+    z-index: 99;
+}
+h2 ,h3{
+    margin :0px;
+}
+#name{
+    padding-top:10px;
+    opacity: 0;
+}
+#and{
+    opacity: 0;
+}
+#Work{
+    padding-bottom: 15px;
+    opacity: 0;
+}
+.promotion{
+    background: #7f7fd5; 
+    background: -webkit-linear-gradient(to top, #7f7fd5, #86a8e7, #91eae4,skyblue); 
+    background: linear-gradient(to top, #7f7fd5, #86a8e7, #91eae4,skyblue);
+    padding: 50px;
+    margin :none;
+}
+.promotion-textbox{ 
+    background: royalblue;
+    
+    width:auto;
+    height: auto;    
+    position: relative;
+    border-radius: 50%;
+    padding: 150px;
+    box-shadow: 10px 10px 25px 25px lightblue;
+    text-align: center;
+}
+.promotion h2{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.promotion h5 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: orange;
+}
+.promotion-textbox div{
+    font-size: 24px;
+    font-weight: 100;
+
+}
+.why-hire-me{
+    background-color: #7f7fd5;
+    padding: 50px;
+    
+}
+.container-reason{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.why-hire-me h1{
+    width: 100%;
+    text-align: center;
+}
+.container-reason-textbox{
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgba(226, 150,0,0.75);
+    width:320px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.container-reason-textbox div{
+    padding: 10px;
+    letter-spacing: 1px;
+}
+.container-reason-textbox-text{
+    overflow-y: scroll;
+    border: solid 5px;
+    border-bottom-right-radius: 50px;
+    height: 200px;
+    overflow-x: hidden;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+.container-reason-textbox-title{
+    color: black;
+    border: none;
+    border: solid 1px rgb(226, 150,0);
+    border-top-left-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    font-size: 80%;
+    font-weight: bold;
+}
+hr{
+    margin :unset;
+}
+.my-projects{
+    background-image: linear-gradient(#7f7fd5,yellow );
+    color: darkblue;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-color: royalblue;
+}
+.project-image img{
+    height: 240px;
+    width: 240px;
+}
+.project-title{
+    font-size: 24px;
+    margin-bottom:30px;
+}
+.project-container{
+    border: 1px solid white;
+    display: flex;    
+    flex-direction: column;
+    padding: 25px;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 15px 15px black;
+}
+.projects{
+    display: flex;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me
+{
+    background-image: linear-gradient(yellow,green);
+    text-align: center;
+    color: rebeccapurple;
+}
+.container-contacts{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-contacts a{
+    text-decoration: none;
+}
+.apps{
+    display: flex;
+    height:35px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    margin: 50px;
+}
+#facebook{
+    color: white;
+    background-color:  #3b5998;
+}
+#instagram{
+    color: #E1306C;
+}
+#gmail
+{
+    color: #B23121;
+}
+#linked-in
+{
+    color:#0e76a8;
+}
+.feedback
+{
+    background-color: green;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+input{
+    width: fit-content;
+    background-color:whitesmoke;
+    margin: 50px;
+    padding:50px;
+    color: rgba(0,0,0,0.5);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+button{
+    
+    background-color: rgba(200, 100,225,0.6);
+    padding: 20px;
+    border-radius: 50%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.submit-butn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width:768px)
+{
+    .container-reason , .projects{
+        flex-direction: column;
+    }
+    input{
+        
+        font-size: 12px;
+        
+    }
+    .promotion-textbox
+    {
+        padding: 60px;
+        font-size: 24px;
+       
+    }
+    .apps{
+       margin: 0px;
+    }
+  
+    .project-container{
+        box-shadow: 5px 5px 5px 5px black;
+    }
+    .container-reason-textbox-title{
+        font-size: 24px;
+    }
+    .container-reason-textbox-text{
+        font-size: 18px;
+        padding: 20px;
+        overflow: scroll;
+    }
+    .container-reason-textbox{
+        width: unset;
+    }
+}
+
+@media all and (max-width:320px){
+    .promotion-textbox{
+        padding: 25px;
+        font-size: 20px;
+    }
+    .promotion-textbox div{
+        font-size: 16px;
+    }
+}
