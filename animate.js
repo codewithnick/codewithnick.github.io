@@ -1,29 +1,91 @@
-window.onload=function animate(){
-
-   setanim();
-   setInterval(function() {for ( i = 1; i <=40; i++) {document.getElementById(i).style.opacity=Math.random();}}, 1000)
-   /*document.getElementById("graph").addEventListener("onload",()=>{
-      const elemen=document.getElementsByClassName("progress")
-      this.console.log(elemen)
-      for (let i = 0; i <elemen.length; i++) {
-         this.console.log(elemen[i])
-         elemen[i].style.animation="ease barfill 1 ";   
-      }
+window.onload=()=>{
+   (function makeDiv(){
+      // vary size for fun
+      forcircle();
+      forDisc();
+      forSquare();
+      forcircle();
+      forDisc();
+      forSquare();
       
-   })
-   */
+  })();
+};
+function forDisc(){
+   var divsize = ((Math.random()*50) + 25).toFixed();
+      var color = 'lightgrey';
+      $newdiv = $('<div id="disc" class="shape"><div/>').css({
+          'width':divsize+'px',
+          'height':divsize+'px',
+      });
+  
+      // make position sensitive to size and document's width
+      var posx = (Math.random() * ($('#block').width() - divsize)).toFixed();
+      var posy = (Math.random() * ($('#block').height() - divsize)).toFixed();
+      myArray1=['left','up','side']
+      var rand = myArray1[(Math.random() * myArray1.length) | 0]
+      $newdiv.css({
+          'position':'absolute',
+          'left':posx+'px',
+          'top':posy+'px',
+          'display':'none',
+          'animation': rand+' 3s linear',
+          'opacity':Math.random()
+      }).appendTo( '#block' ).fadeIn(100).delay(1000).fadeOut(500, function(){
+        $(this).remove();
+        forDisc(); 
+      }); 
 }
-
-function setanim(){
-    evencounter="bottom";
-    oddcounter="right"
-    var myArray1 = ['bottom', 'up','bottomright','upright','upleft','bottomleft']; 
-   for ( i = 1; i <=40; i++) {
-                var rand = myArray1[(Math.random() * myArray1.length) | 0]
-            document.getElementById(i).style.animation=rand+" 2s ease-in-out infinite";
-            rand=Math.random()*3+1;
-            document.getElementById(i).style.animationDelay=rand+"s";
-            
-   }
-   
+function forcircle(){
+   var divsize = ((Math.random()*50) + 25).toFixed();
+      var color = 'lightgrey';
+      $newdiv = $('<div id="circle" class="shape"><div/>').css({
+          'width':divsize+'px',
+          'height':divsize+'px',
+          'background-color': color,
+      });
+  
+      // make position sensitive to size and document's width
+      var posx = (Math.random() * ($('#block').width() - divsize)).toFixed();
+      var posy = (Math.random() * ($('#block').height() - divsize)).toFixed();
+      
+      myArray1=['left','up','side']
+      var rand = myArray1[(Math.random() * myArray1.length) | 0]
+      $newdiv.css({
+          'position':'absolute',
+          'left':posx+'px',
+          'top':posy+'px',
+          'display':'none',
+          'animation': rand+' 3s linear',
+          'opacity':Math.random()
+      }).appendTo( '#block' ).fadeIn(100).delay(1000).fadeOut(500, function(){
+        $(this).remove();
+        forcircle(); 
+      }); 
+}
+function forSquare(){
+   var divsize = ((Math.random()*50) + 25).toFixed();
+      var color = 'lightgrey';
+      $newdiv = $('<div class="shape"><div/>').css({
+          'width':divsize+'px',
+          'height':divsize+'px',
+          'background-color': color,
+      });
+  
+      // make position sensitive to size and document's width
+      var posx = (Math.random() * ($('#block').width() - divsize)).toFixed();
+      var posy = (Math.random() * ($('#block').height() - divsize)).toFixed();
+      
+      myArray1=['left','up','side']
+      var rand = myArray1[(Math.random() * myArray1.length) | 0]
+      $newdiv.css({
+          'position':'absolute',
+          'left':posx+'px',
+          'top':posy+'px',
+          'display':'none',
+          'animation': rand+' 3s linear',
+          'opacity':Math.random()
+      }).appendTo( '#block' ).fadeIn(100).delay(1000).fadeOut(500, function(){
+        $(this).remove();
+        forSquare(); 
+      }); 
 }

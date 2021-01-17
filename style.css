@@ -48,23 +48,29 @@ ul{
     padding: 0px;
    
 }
-.animation ul{
-    position: absolute;
-    top:225px;
-    animation: rotation 10s infinite linear;
-    animation-delay: 4s;
-    z-index: -1;
-}
-
 .animation{
-    overflow: hidden;
+    position: absolute;
 }
-.animation li{
-    background-color: white;
-    height: 15px;
-    width: 15px;
+.shape{
+    z-index: -1;
+
+}
+#circle{
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
-    margin:5px;
+    border: 5px solid #F0F4EF;
+}
+#disc{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid #F0F4EF;
+    background-color: transparent;
+}
+#block{
+    height: 300px;
+    width: 100% ;
 }
 .hide{
     display: none;
@@ -102,6 +108,7 @@ ul{
 }
 h1{
     margin-top: 25px;
+    margin-bottom: 15px;
     color: #746F72;
     border-bottom: 1px solid #746F72;
     font-size: 30px;
@@ -231,9 +238,7 @@ h1{
     outline: none;
 }
 @media screen and (max-width: 800px) {
-   .animation{
-       display: none;
-   }
+   
     .container{
         padding: 0px;
     }
@@ -266,7 +271,5 @@ h1{
         z-index: 1;
 
     }
-    h1{
-        margin-bottom: 10px;
-    }
+
 }
