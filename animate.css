@@ -40,3 +40,15 @@
     transform: rotateX(0deg);
   }
 }
+@keyframes fill{
+  from{
+    width: 0%;
+  }
+  
+}
+@keyframes load{
+  to{
+    opacity: 1;
+  }
+
+}

@@ -134,14 +134,17 @@ h1{
     width: 60%;
     background-color: #DBDBFA;
 }
-
-.progress::before{
-    width: 0px;
-}
-.progress{
-    background-color: #7678ED;
+.progress{   
     
-    animation-delay: 1s;
+    animation: 3s fill ease-out 0.5s;
+
+}
+
+.progress div{
+    
+    background-color: #7678ED;
+    width: 100%;
+    height: 100%;
 }
 
 .lang{
@@ -192,7 +195,7 @@ h1{
 .project-link:hover{
     border-top: 0.1px solid #F53519;
     border-bottom: 0.1px solid #F53519;
-    animation: forwards load 2s 1 ;
+    animation: forwards load 2s  1;
 }
 .project-link h4{
     font-weight: 600;
