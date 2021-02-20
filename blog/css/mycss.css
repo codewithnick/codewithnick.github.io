@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+}
+@media screen and (max-width:320px){
+    .main{
+        flex-direction: column;
+    }
+    .main article{
+        width: 100%;
+    }
+}
