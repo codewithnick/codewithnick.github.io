@@ -134,7 +134,7 @@ h1{
     width: 60%;
     background-color: #DBDBFA;
 }
-.progress{   
+.animation_load{   
     
     animation: 3s fill ease-out 0.5s;
 

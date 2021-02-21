@@ -9,6 +9,25 @@ window.onload=()=>{
       forSquare();
       
   })();
+  elements=document.getElementsByClassName("progress");
+  
+  $(window).scroll(function () {
+    if($(window).scrollTop() >300) {
+      for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        element.classList.add("animation_load");  
+      }
+      
+    }
+    else {
+      for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        element.classList.remove("animation_load");
+      }
+      
+      
+    }
+  });
 };
 function forDisc(){
    var divsize = ((Math.random()*50) + 25).toFixed();
