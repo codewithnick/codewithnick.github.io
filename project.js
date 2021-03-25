@@ -1,4 +1,3 @@
-document.onload(()=>{
-    
-
+$(document).ready(function() { 
+  
 });
