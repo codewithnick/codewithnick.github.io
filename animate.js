@@ -1,4 +1,4 @@
-window.onload=()=>{
+$(document).ready(function(){
    (function makeDiv(){
       // vary size for fun
       forcircle();
@@ -28,7 +28,7 @@ window.onload=()=>{
       
     }
   });
-};
+});
 function forDisc(){
    var divsize = ((Math.random()*50) + 25).toFixed();
       var color = 'lightgrey';
