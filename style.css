@@ -286,12 +286,12 @@ h1{
 .tabs button{
     border:none;
     font-size: 24px;
-    padding-bottom: 30px;
+    padding: 5px;
+    margin-bottom: 30px;
     font-family: cursive;
+    
 }
-.open{
 
-}
 .skillcontainer{
     width: 100%;
     
