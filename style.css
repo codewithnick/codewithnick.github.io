@@ -41,6 +41,11 @@ body{
     border-radius: 50%;
 
 }
+.underline {
+    transform: rotate(-4deg);
+    position: relative;
+    top: -55px;
+}
 ul{
     list-style-type: none;
     display: flex;
@@ -97,7 +102,7 @@ ul{
 .orange_text{
     color: #F53519;
 }
-#about_me ,#graph ,#projects , #contact-me{
+#about_me ,#graph ,#projects ,#certifications, #contact-me{
     width: 100%;
     background-color: #F0F4EF;
     border-top: 5px solid #7678ED;
@@ -134,7 +139,7 @@ h1{
     width: 60%;
     background-color: #DBDBFA;
 }
-.progress{   
+.animation_load{   
     
     animation: 3s fill ease-out 0.5s;
 
