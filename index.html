@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href="animate.css" rel="stylesheet">
@@ -16,181 +17,250 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Nikhil Singh</title>
     <script src="animate.js"></script>
+    <script src="project.js"></script>
 </head>
+
 <body>
-	<nav>
-		<ul class="menu" >
-			<li><a href="#about_me" id="about" class="link">About</a></li>
-			<li><a href="#projects" id="rojects" class="link">Projects</a></li>
-			<li><a href="#contact-me" id="contact" class="link" >Contact</a></li>
-		</ul>
-	</nav>
+    <nav>
+        <ul class="menu">
+            <li><a href="#about_me" id="about" class="link">About</a></li>
+            <li><a href="#projects" id="rojects" class="link">Projects</a></li>
+            <li><a href="#contact-me" id="contact" class="link">Contact</a></li>
+        </ul>
+    </nav>
     <div class="animation" id="block">
         <div id="disc" class="hide">
             test element
         </div>
-    </div>   
-    <div >
-        
-    	<div class="dp vcenter hcenter">
-            
+    </div>
+    <div>
+
+        <div class="dp vcenter hcenter">
+
             <img src="dp.jpg">
             <span style="font-family: 'Rock Salt', cursive;font-size: 32px;">Nikhil Singh</span>
-    	</div>
+        </div>
     </div>
-    
-    
+
+
     <div id="about_me">
         <div class="hcenter">
-            <h1 >Who am I?</h1>
+            <h1>Who am I?</h1>
         </div>
-    	<p>   
-            I'm a <span class="lavender_text">Student Developer</span> in Mumbai, Maharashtra 
-            And I have serious passion for <span class="lavender_text">Coding</span> and <span class="lavender_text">Designing.</span>
+        <p>
+            I'm a <span class="lavender_text">Student Developer</span> in Mumbai, Maharashtra
+            And I have serious passion for <span class="lavender_text">Coding</span> and <span
+                class="lavender_text">Designing.</span>
         </p>
         <blockquote style="font-family: raleway;">`Being Creative`</blockquote>
-        
+
     </div>
     <div id="graph">
         <h1>My skills</h1>
         
-        <div class="bar">
-            <div class="lang">HTML5</div>
-            <div class="progress" style="width: 80%;">
-                <div></div>
+            <div class="tabs">
+                <button onclick="webskill" id="webskill">Web</button>
+                <button onclick="desktopskill" id="desktopskill">Desktop</button>
+                <button onclick="othersskill" id="othersskill">Others</button>
             </div>
-            <span class="percent">80%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">CSS3</div>
-            <div class="progress" style="width: 80%;">
-                <div></div></div>
-            <span class="percent">80%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">JavaScript</div>
-            <div class="progress" style="width: 70%;">
-                <div></div>
+        <div id="webskilltab" style="width: 100%;">
+            <div class="skillcontainer"   >
+            <div class="bar">
+                <div class="lang">HTML5</div>
+                <div class="progress" style="width: 80%;">
+                    <div></div>
+                </div>
+                <span class="percent">80%</span>
             </div>
-            <span class="percent">70%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">PHP</div>
-            <div class="progress" style="width: 65%;">
-                <div></div>
+            <div class="bar">
+                <div class="lang">CSS3</div>
+                <div class="progress" style="width: 80%;">
+                    <div></div>
+                </div>
+                <span class="percent">80%</span>
             </div>
-            <span class="percent">65%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">NodeJS</div>
-            <div class="progress" style="width: 65%;">
-                <div></div>
+            <div class="bar">
+                <div class="lang">JavaScript</div>
+                <div class="progress" style="width: 70%;">
+                    <div></div>
+                </div>
+                <span class="percent">70%</span>
             </div>
-            <span class="percent">65%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">Python</div>
-            <div class="progress" style="width: 80%;">
-                <div></div>
+            <div class="bar">
+                <div class="lang">JSP</div>
+                <div class="progress" style="width: 70%;">
+                    <div></div>
+                </div>
+                <span class="percent">70%</span>
             </div>
-            <span class="percent">80%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">Java</div>
-            <div class="progress" style="width: 70%;">
-                <div></div>
+            <div class="bar">
+                <div class="lang">PHP</div>
+                <div class="progress" style="width: 65%;">
+                    <div></div>
+                </div>
+                <span class="percent">65%</span>
             </div>
-            <span class="percent">70%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">C/C++</div>
-            <div class="progress" style="width: 60%;">
-                <div></div>
+            <div class="bar">
+                <div class="lang">NodeJS</div>
+                <div class="progress" style="width: 65%;">
+                    <div></div>
+                </div>
+                <span class="percent">65%</span>
             </div>
-            <span class="percent">60%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">MySQL</div>
-            <div class="progress" style="width: 50%;">
-                <div></div>
+            <div class="bar">
+                <div class="lang">ExpressJS</div>
+                <div class="progress" style="width: 65%;">
+                    <div></div>
+                </div>
+                <span class="percent">65%</span>
             </div>
-            <span class="percent">50%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">PLSQL</div>
-            <div class="progress" style="width: 50%;">
-                <div></div>
+            <div class="bar">
+                <div class="lang">ASP .NET</div>
+                <div class="progress" style="width: 55%;">
+                    <div></div>
+                </div>
+                <span class="percent">55%</span>
             </div>
-            <span class="percent">50%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">Canva</div>
-            <div class="progress" style="width: 55%;">
-                <div></div>
+            <div class="bar">
+                <div class="lang">Struts2</div>
+                <div class="progress" style="width: 50%;">
+                    <div></div>
+                </div>
+                <span class="percent">50%</span>
             </div>
-            <span class="percent">55%</span>
-        </div>
-        <div class="bar">
-            <div class="lang">Automation</div>
-            <div class="progress" style="width: 80%;">
-                <div></div>
             </div>
-            <span class="percent">80%</span>
         </div>
+        <div class="hide" id="desktopskilltab" style="width: 100%;">
+            <div class="skillcontainer"  >
+                <div class="bar">
+                    <div class="lang">Python</div>
+                    <div class="progress" style="width: 80%;">
+                        <div></div>
+                    </div>
+                    <span class="percent">80%</span>
+                </div>
+                <div class="bar">
+                    <div class="lang">Java</div>
+                    <div class="progress" style="width: 70%;">
+                        <div></div>
+                    </div>
+                    <span class="percent">70%</span>
+                </div>
+                <div class="bar">
+                    <div class="lang">C</div>
+                    <div class="progress" style="width: 60%;">
+                        <div></div>
+                    </div>
+                    <span class="percent">60%</span>
+                </div>
+                <div class="bar">
+                    <div class="lang">C++</div>
+                    <div class="progress" style="width: 60%;">
+                        <div></div>
+                    </div>
+                    <span class="percent">60%</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="hide" id="othersskilltab" style="width: 100%;">
+            <div class="skillcontainer"  >
+                <div class="bar">
+                    <div class="lang">Automation</div>
+                    <div class="progress" style="width: 80%;">
+                        <div></div>
+                    </div>
+                    <span class="percent">80%</span>
+                </div>
+                <div class="bar">
+                    <div class="lang">Android</div>
+                    <div class="progress" style="width: 70%;">
+                        <div></div>
+                    </div>
+                    <span class="percent">70%</span>
+                </div>
+                <div class="bar">
+                    <div class="lang">Canva</div>
+                    <div class="progress" style="width: 55%;">
+                        <div></div>
+                    </div>
+                    <span class="percent">55%</span>
+                </div>
+                <div class="bar">
+                    <div class="lang">MySQL</div>
+                    <div class="progress" style="width: 50%;">
+                        <div></div>
+                    </div>
+                    <span class="percent">50%</span>
+                </div>
+                <div class="bar">
+                    <div class="lang">PLSQL</div>
+                    <div class="progress" style="width: 50%;">
+                        <div></div>
+                    </div>
+                    <span class="percent">50%</span>
+                </div>
+                
+               
+            </div>
+        </div>
+
     </div>
     <div id="projects">
         <div class="hcenter">
-            <h1 >Projects</h1>
+            <h1>Projects</h1>
         </div>
         <div class="container">
-            <div class="project-container" style="background-image: url('images/addmie.png');">  
+            <div class="project-container" style="background-image: url('images/addmie.png');">
                 <div class="project-link hcenter ">
                     <h2>ADDMIE</h2>
                     <h4 class="orange_text">NodeJS,EJS,MongoDB,Express</h4>
-                        <a href="https://github.com/codewithnick">Checkout</a>     
-                </div>   
+                    <a href="https://github.com/codewithnick/Addmie">Checkout</a>
+                </div>
             </div>
-            
-            <div class="project-container" style="background-image: url('images/igbot.png');">     
+
+            <div class="project-container" style="background-image: url('images/igbot.png');">
                 <div class="project-link hcenter">
                     <h2>Igbot
                     </h2>
                     <h4 class="orange_text">Python,Selenium</h4>
-                        <a href="https://github.com/codewithnick">Checkout</a>     
+                    <a href="https://github.com/codewithnick/instagrambot">Checkout</a>
                 </div>
             </div>
-            <div class="project-container" style="background-image: url('images/spaceshooter.PNG');">     
+            <div class="project-container" style="background-image: url('images/spaceshooter.PNG');">
                 <div class="project-link hcenter">
                     <h2>SpaceShooter
                     </h2>
                     <h4 class="orange_text">Python,Pygame</h4>
-                        <a href="https://github.com/codewithnick">Checkout</a>     
+                    <a href="https://github.com/codewithnick/space-shooter-v1">Checkout</a>
                 </div>
             </div>
-            <div class="project-container" style="background-image: url('images/sudoku.png');">     
+            <div class="project-container" style="background-image: url('images/sudoku.png');">
                 <div class="project-link hcenter">
                     <h2>Sudoku-Solver
                     </h2>
                     <h4 class="orange_text">C++</h4>
-                        <a href="https://github.com/codewithnick">Checkout</a>     
+                    <a href="https://github.com/codewithnick/sudoku-solver-v2.0">Checkout</a>
                 </div>
             </div>
         </div>
-   </div>
+    </div>
 
-   <div id="contact-me">
-    <h1>Contact Me</h1>
-        <h3><div class="lavender_text"><a href="https://linktr.ee/codewithnick">Links here</a></div></h3>
-       <div class="hcenter">
-        
+    <div id="contact-me">
+        <h1>Contact Me</h1>
+        <h3>
+            <div class="lavender_text"><a href="https://linktr.ee/codewithnick">Links here</a></div>
+        </h3>
+        <div class="hcenter">
+
         </div>
-   </div>
+    </div>
 
-   <footer style=" font-family: monospace;text-align:center ;"   >
-   	@codewithnick
-   </footer>
-   
-   <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <footer style=" font-family: monospace;text-align:center ;">
+        @codewithnick
+    </footer>
+
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
-</html>
 
+</html>
