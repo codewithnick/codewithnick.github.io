@@ -1,4 +1,4 @@
-window.onload=()=>{
+$(document).ready(function(){
     var webskilltab=document.getElementById("webskilltab");
     var webskill=document.getElementById("webskill");
     var desktopskilltab=document.getElementById("desktopskilltab");
@@ -30,4 +30,4 @@ window.onload=()=>{
         webskill.style.backgroundColor='transparent';
         desktopskill.style.backgroundColor='transparent';
     };
-};
+});
