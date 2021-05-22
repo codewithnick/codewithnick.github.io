@@ -236,45 +236,59 @@
         <div class="hcenter">
             <h1>Projects</h1>
         </div>
-        <div class="container">
-            <div class="project-container" style="background-image: url('images/addmie.png');">
-                <div class="project-link hcenter ">
-                    <h2>ADDMIE</h2>
-                    <h4 class="orange_text">NodeJS,EJS,MongoDB,Express</h4>
-                    <a href="https://github.com/codewithnick/Addmie">Checkout</a>
+        <div class="tabs">
+            <button onclick="webproject" id="webproject" style="background-color: rgba(118, 120, 237, 0.4);">Web</button>
+            <button onclick="desktopproject" id="desktopproject">Desktop</button>
+            <button onclick="othersproject" id="othersproject">Others</button>
+        </div>
+        <div id="webprojecttab" style="width: 100%;">
+            <div class="container" >
+                <div class="project-container" style="background-image: url('images/addmie.png');">
+                    <div class="project-link hcenter ">
+                        <h2>ADDMIE</h2>
+                        <h4 class="orange_text">NodeJS,EJS,MongoDB,Express</h4>
+                        <a href="https://github.com/codewithnick/Addmie">Checkout</a>
+                    </div>
+                </div>
+                <div class="project-container" style="background-image: url('images/ams.png');">
+                    <div class="project-link hcenter">
+                        <h2>Attendance-Management-System
+                        </h2>
+                        <h4 class="orange_text">Java ,JSP</h4>
+                        <a href="https://github.com/codewithnick/attendance-management-system">Checkout</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="project-container" style="background-image: url('images/igbot.png');">
-                <div class="project-link hcenter">
-                    <h2>Igbot
-                    </h2>
-                    <h4 class="orange_text">Python,Selenium</h4>
-                    <a href="https://github.com/codewithnick/instagrambot">Checkout</a>
+        </div>
+        <div class="hide" id="desktopprojecttab" style="width: 100%;">
+            <div class="container">
+                <div class="project-container" style="background-image: url('images/spaceshooter.PNG');">
+                    <div class="project-link hcenter">
+                        <h2>SpaceShooter
+                        </h2>
+                        <h4 class="orange_text">Python,Pygame</h4>
+                        <a href="https://github.com/codewithnick/space-shooter-v1">Checkout</a>
+                    </div>
+                </div>
+                <div class="project-container" style="background-image: url('images/sudoku.png');">
+                    <div class="project-link hcenter">
+                        <h2>Sudoku-Solver
+                        </h2>
+                        <h4 class="orange_text">C++</h4>
+                        <a href="https://github.com/codewithnick/sudoku-solver-v2.0">Checkout</a>
+                    </div>
                 </div>
             </div>
-            <div class="project-container" style="background-image: url('images/spaceshooter.PNG');">
-                <div class="project-link hcenter">
-                    <h2>SpaceShooter
-                    </h2>
-                    <h4 class="orange_text">Python,Pygame</h4>
-                    <a href="https://github.com/codewithnick/space-shooter-v1">Checkout</a>
-                </div>
-            </div>
-            <div class="project-container" style="background-image: url('images/sudoku.png');">
-                <div class="project-link hcenter">
-                    <h2>Sudoku-Solver
-                    </h2>
-                    <h4 class="orange_text">C++</h4>
-                    <a href="https://github.com/codewithnick/sudoku-solver-v2.0">Checkout</a>
-                </div>
-            </div>
-            <div class="project-container" style="background-image: url('images/ams.png');">
-                <div class="project-link hcenter">
-                    <h2>Attendance-Management-System
-                    </h2>
-                    <h4 class="orange_text">Java ,JSP</h4>
-                    <a href="https://github.com/codewithnick/attendance-management-system">Checkout</a>
+        </div>
+        <div class="hide" id="othersprojecttab" style="width: 100%;">
+            <div class="container">
+                <div class="project-container" style="background-image: url('images/igbot.png');">
+                    <div class="project-link hcenter">
+                        <h2>Igbot
+                        </h2>
+                        <h4 class="orange_text">Python,Selenium</h4>
+                        <a href="https://github.com/codewithnick/instagrambot">Checkout</a>
+                    </div>
                 </div>
             </div>
         </div>

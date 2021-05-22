@@ -5,7 +5,7 @@ $(document).ready(function(){
     var desktopskill=document.getElementById("desktopskill");
     var othersskillstab=document.getElementById("othersskilltab");
     var othersskill=document.getElementById("othersskill");
-    console.log("working");
+    
     webskill.onclick=()=>{
         webskilltab.classList.remove('hide');
         desktopskilltab.classList.add('hide');
@@ -29,5 +29,38 @@ $(document).ready(function(){
         othersskill.style.backgroundColor='rgba(118, 120, 237, 0.4)';
         webskill.style.backgroundColor='transparent';
         desktopskill.style.backgroundColor='transparent';
+    };
+
+
+
+    var webproject=document.getElementById("webproject");
+    var webprojecttab=document.getElementById("webprojecttab");
+    var desktopprojecttab=document.getElementById("desktopprojecttab");
+    var desktopproject=document.getElementById("desktopproject");
+    var othersproject=document.getElementById("othersproject");
+    var othersprojecttab=document.getElementById("othersprojecttab");
+    webproject.onclick=()=>{
+        webprojecttab.classList.remove('hide');
+        desktopprojecttab.classList.add('hide');
+        othersprojecttab.classList.add('hide');
+        webproject.style.backgroundColor='rgba(118, 120, 237, 0.4)';
+        desktopproject.style.backgroundColor='transparent';
+        othersproject.style.backgroundColor='transparent';
+    };
+    desktopproject.onclick=()=>{
+        desktopprojecttab.classList.remove('hide');
+        webprojecttab.classList.add('hide');
+        othersprojecttab.classList.add('hide');
+        desktopproject.style.backgroundColor='rgba(118, 120, 237, 0.4)';
+        webproject.style.backgroundColor='transparent';
+        othersproject.style.backgroundColor='transparent';
+    };
+    othersproject.onclick=()=>{
+        othersprojecttab.classList.remove('hide');
+        desktopprojecttab.classList.add('hide');
+        webprojecttab.classList.add('hide');
+        othersproject.style.backgroundColor='rgba(118, 120, 237, 0.4)';
+        desktopproject.style.backgroundColor='transparent';
+        webproject.style.backgroundColor='transparent';
     };
 });
