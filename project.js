@@ -10,25 +10,25 @@ $(document).ready(function(){
         webskilltab.classList.remove('hide');
         desktopskilltab.classList.add('hide');
         othersskillstab.classList.add('hide');
-        webskill.style.backgroundColor='rgba(118, 120, 237, 0.4)';
-        desktopskill.style.backgroundColor='transparent';
-        othersskill.style.backgroundColor='transparent';
+        webskill.classList.add('textcolorpurple');
+        desktopskill.classList.remove('textcolorpurple');
+        othersskill.classList.remove('textcolorpurple');
     };
     desktopskill.onclick=()=>{
         desktopskilltab.classList.remove('hide');
         webskilltab.classList.add('hide');
         othersskillstab.classList.add('hide');
-        webskill.style.backgroundColor='transparent';
-        desktopskill.style.backgroundColor='rgba(118, 120, 237, 0.4)';
-        othersskill.style.backgroundColor='transparent';
+        webskill.classList.remove('textcolorpurple');
+        desktopskill.classList.add('textcolorpurple');
+        othersskill.classList.remove('textcolorpurple');
     };
     othersskill.onclick=()=>{
         othersskillstab.classList.remove('hide');
         webskilltab.classList.add('hide');
         desktopskilltab.classList.add('hide');
-        othersskill.style.backgroundColor='rgba(118, 120, 237, 0.4)';
-        webskill.style.backgroundColor='transparent';
-        desktopskill.style.backgroundColor='transparent';
+        othersskill.classList.add('textcolorpurple');
+        webskill.classList.remove('textcolorpurple');
+        desktopskill.classList.remove('textcolorpurple');
     };
 
 
@@ -43,24 +43,24 @@ $(document).ready(function(){
         webprojecttab.classList.remove('hide');
         desktopprojecttab.classList.add('hide');
         othersprojecttab.classList.add('hide');
-        webproject.style.backgroundColor='rgba(118, 120, 237, 0.4)';
-        desktopproject.style.backgroundColor='transparent';
-        othersproject.style.backgroundColor='transparent';
+        webproject.classList.add('textcolorpurple');
+        desktopproject.classList.remove('textcolorpurple');
+        othersproject.classList.remove('textcolorpurple');
     };
     desktopproject.onclick=()=>{
         desktopprojecttab.classList.remove('hide');
         webprojecttab.classList.add('hide');
         othersprojecttab.classList.add('hide');
-        desktopproject.style.backgroundColor='rgba(118, 120, 237, 0.4)';
-        webproject.style.backgroundColor='transparent';
-        othersproject.style.backgroundColor='transparent';
+        desktopproject.classList.add('textcolorpurple');
+        webproject.classList.remove('textcolorpurple');
+        othersproject.classList.remove('textcolorpurple');
     };
     othersproject.onclick=()=>{
         othersprojecttab.classList.remove('hide');
         desktopprojecttab.classList.add('hide');
         webprojecttab.classList.add('hide');
-        othersproject.style.backgroundColor='rgba(118, 120, 237, 0.4)';
-        desktopproject.style.backgroundColor='transparent';
-        webproject.style.backgroundColor='transparent';
+        othersproject.classList.add('textcolorpurple');
+        desktopproject.classList.remove('textcolorpurple');
+        webproject.classList.remove('textcolorpurple');
     };
 });

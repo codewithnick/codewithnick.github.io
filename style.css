@@ -189,6 +189,8 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
     margin: 15px;
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
 }
 
 .project-link{
@@ -283,6 +285,9 @@ h1{
     }
 
 }
+.textcolorpurple{
+    color: #7678ED;
+}
 .tabs{
 
  width: 100%;
@@ -314,4 +319,5 @@ h1{
 .icon> img{
     padding: 5px;
     border-radius: 50%;
+    
 }
